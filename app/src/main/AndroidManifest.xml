@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.trungpt.videodownloadmaster">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/ic_download_plus"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GGApp.Main"
+            android:name="com.taa.videohd.MyApplication"
+            >
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+
+        <activity
+                android:name="com.taa.videohd.MainActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:configChanges="keyboardHidden|orientation">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name="com.taa.videohd.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="com.taa.videohd.ui.activity.YoutubeSearchActivity"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:theme="@style/Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.app.searchable"
+                    android:resource="@xml/searchable"/>
+        </activity>
+        <activity
+                android:name="com.taa.videohd.ui.activity.UserDetailActivity"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:label="@string/title_activity_user_detail"
+                android:theme="@style/Theme.NoActionBar.User">
+        </activity>
+        <activity
+                android:name="com.taa.videohd.ui.activity.PlayListDetailActivity"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:label="@string/title_activity_play_list_detail">
+        </activity>
+        <activity
+                android:name="com.taa.videohd.ui.activity.PlayListYoutubeDetailActivity"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:label="@string/title_activity_play_list_detail"
+                android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        </activity>
+        <activity
+                android:name="com.taa.videohd.ui.activity.ListVideoDetailActivity"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:label="@string/title_activity_video_detail">
+        </activity>
+        <activity
+                android:name="com.taa.videohd.ui.activity.YoutubeVideoDetailActivity"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                android:label="@string/title_activity_youtube_video_detail"
+                android:screenOrientation="nosensor">
+        </activity>
+        <activity
+                android:name="com.taa.videohd.ui.activity.VimeoVideoDetailActivity"
+                android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+                android:label="@string/title_activity_video_detail"
+                android:screenOrientation="nosensor"
+                android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">>
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="content"/>
+                <data android:scheme="asset"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </activity>
+
+        <!--============================Ads============================-->
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:theme="@android:style/Theme.Translucent"/>
+
+        <!--<activity-->
+                <!--android:name="com.startapp.android.publish.list3d.List3DActivity"-->
+                <!--android:theme="@android:style/Theme" />-->
+        <!--<activity-->
+                <!--android:name="com.startapp.android.publish.OverlayActivity"-->
+                <!--android:configChanges="orientation|keyboardHidden|screenSize"-->
+                <!--android:theme="@android:style/Theme.Translucent" />-->
+        <!--<activity-->
+                <!--android:name="com.startapp.android.publish.FullScreenActivity"-->
+                <!--android:configChanges="orientation|keyboardHidden|screenSize"-->
+                <!--android:theme="@android:style/Theme" />-->
+
+        <service
+                android:name="com.taa.videohd.download.DownloadService"
+                android:exported="false"
+                android:process=":background"/>
+        <!--Parser-->
+        <meta-data
+                android:name="com.parse.APPLICATION_ID"
+                android:value="yWFWpT8GDjb86IhJ1LzIFRwiQIRf3xxYYvPoRlYI" />
+        <meta-data
+                android:name="com.parse.CLIENT_KEY"
+                android:value="HIgTrbfEdzPlJzPPwVmglHl78OwoQBZE84XRLl5e" />
+    </application>
+</manifest>

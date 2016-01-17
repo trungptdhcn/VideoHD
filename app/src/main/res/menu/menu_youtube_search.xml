@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.jodiepham.com.com.downloadmanage.ui.activity.YoutubeSearchActivity">
+    <item
+            android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+            android:id="@+id/action_search"
+            android:title="Search"
+            app:showAsAction="collapseActionView|ifRoom"
+            app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item
+            android:id="@+id/advanced_filter"
+            android:orderInCategory="300"
+            android:title="User"
+            android:icon="@drawable/ic_menu_filter_mtrl_alpha"
+            app:showAsAction="always"></item>
+</menu>

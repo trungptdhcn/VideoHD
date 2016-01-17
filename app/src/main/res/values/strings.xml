@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Video HD Pro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_video_detail">VideoDetailActivity</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="description">Media Controls</string>
+    <string name="title_activity_player">PlayerActivity</string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="text">Text</string>
+    <string name="logging">Logging</string>
+    <string name="logging_normal">Normal</string>
+    <string name="logging_verbose">Verbose</string>
+    <string name="retry">Retry</string>
+    <string name="off">[off]</string>
+    <string name="drm_error_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="drm_error_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="drm_error_unknown">An unknown DRM error occurred</string>
+    <string name="enable_background_audio">Play in background</string>
+    <string name="title_activity_dailymotion_detail">DailymotionDetailActivity</string>
+    <string name="title_activity_vimeo_search">VimeoSearchActivity</string>
+    <string name="bt_done">Done</string>
+    <string name="title_activity_list_video">ListVideoActivity</string>
+    <string name="title_activity_dailimotion_search">DailimotionSearchActivity</string>
+    <string name="title_activity_list_video_dailymotion">ListVideoDailymotionActivity</string>
+    <string name="lorem_ipsum">Test</string>
+    <string name="title_activity_youtube_search">YoutubeSearchActivity</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="title_activity_user_detail">UserDetailActivity</string>
+    <string name="title_activity_play_list_detail">PlayListDetailActivity</string>
+    <string name="title_activity_youtube_video_detail">YoutubeVideoDetailActivity</string>
+    <string name="title_activity_vimeo_video_detail">VimeoVideoDetailActivity</string>
+
+    <!--=========================ADS==============================-->
+    <string name="download_plus_banner">ca-app-pub-1970326209934190/5520780867</string>
+    <string name="download_plus_banner2">ca-app-pub-1970326209934190/9950980462</string>
+    <string name="download_plus_integrate">ca-app-pub-1970326209934190/8334646466</string>
+
+</resources>

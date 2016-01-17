@@ -1,0 +1,104 @@
+<resources>
+
+    <style name="Root.Theme" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="Theme" parent="Root.Theme">
+    </style>
+    <style name="Theme.GGApp.Base" parent="Theme">
+    </style>
+    <style name="Theme.GGApp" parent="Theme.GGApp.Base"/>
+    <style name="Theme.GGApp.WithNavDrawer" parent="Theme.GGApp"/>
+    <style name="Theme.GGApp.StatusBarTransparent" parent="Theme.GGApp"/>
+    <style name="Theme.GGApp.Main" parent="Theme.GGApp.WithNavDrawer">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@color/blue_facebook</item>
+        <!--<item name="colorPrimaryDark">@color/blue_facebook</item>-->
+        <item name="colorAccent">@color/gray_21</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+        <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+    </style>
+    <style name="Theme.GGApp.Stream" parent="Theme.GGApp.StatusBarTransparent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/blue_facebook</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+
+    <!--===================================Style Text================================-->
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextTitleStyle" parent="TextStyle">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextContentStyle" parent="TextStyle">
+        <item name="android:typeface">serif</item>
+    </style>
+    <style name="TextStyleSetting">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:typeface">normal</item>
+    </style>
+    <style name="LineHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="SeekBarAppTheme" parent="android:Widget.Holo.SeekBar">
+        <item name="android:progressDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:thumb">@drawable/apptheme_scrubber_control_selector_holo_dark</item>
+    </style>
+
+    <style name="SpinnerAppTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/apptheme_spinner_background_holo_dark</item>
+        <item name="android:dropDownSelector">@drawable/apptheme_list_selector_holo_dark</item>
+    </style>
+
+    <style name="SpinnerDropDownItemAppTheme" parent="android:Widget.DropDownItem.Spinner">
+        <item name="android:checkMark">@drawable/apptheme_btn_radio_holo_dark</item>
+    </style>
+
+    <!--======================Searchable===========================-->
+    <!-- Base application theme. -->
+    <style name="Theme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/black_transparent</item>
+        <item name="colorAccent">@color/red_simi</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Theme.NoActionBar.User" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/gray</item>
+        <item name="colorPrimaryDark">@color/red_simi</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorAccent">@color/red_simi</item>
+    </style>
+    <!--============================Progress========================-->
+
+    <!--<style name="NumberProgressBar_Beauty_Red">-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+
+        <!--<item name="progress_max">100</item>-->
+        <!--<item name="progress_current">0</item>-->
+
+        <!--<item name="progress_unreached_color">#CCCCCC</item>-->
+        <!--<item name="progress_reached_color">#FF3D7F</item>-->
+        <!--<item name="progress_text_size">10sp</item>-->
+        <!--<item name="progress_text_color">#FF3D7F</item>-->
+
+        <!--<item name="progress_reached_bar_height">1.5dp</item>-->
+        <!--<item name="progress_unreached_bar_height">0.75dp</item>-->
+    <!--</style>-->
+
+</resources>
